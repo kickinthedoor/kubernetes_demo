@@ -19,7 +19,7 @@ data:
       <script>
         async function loadMessage() {
           try {
-            const response = await fetch('/api');
+            const response = await fetch('./api');
             const data = await response.json();
             document.getElementById('output').textContent = JSON.stringify(data, null, 2);
           } catch (e) {
