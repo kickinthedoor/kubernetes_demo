@@ -13,7 +13,7 @@ data:
     <body>
       <h1>FastAPI on Kubernetes</h1>
       <p>Very working frontend.</p>
-      <button onclick="loadMessage()">Load message from backend</button>
+      <button onclick="loadMessage()">Load message of the day</button>
       <pre id="output"></pre>
 
       <script>

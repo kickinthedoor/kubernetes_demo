@@ -7,14 +7,14 @@ spec:
   rules:
     - http:
         paths:
-          - path: /api
+          - path: /koth/api
             pathType: Prefix
             backend:
               service:
                 name: koth
                 port:
                   number: 8000
-          - path: /
+          - path: /koth
             pathType: Prefix
             backend:
               service:
