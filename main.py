@@ -1,7 +1,12 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, APIRouter
 
 app = FastAPI()
 
-@app.get("/api")
+api = APIRouter(prefix="/koth/api")
+
+@api.get("")      
+@api.get("/")     
 def read_root():
     return {"message":"Pikaista paranemista"}
+
+app.include_router(api)
